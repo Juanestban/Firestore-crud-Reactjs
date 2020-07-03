@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// firebase
+import './firebase';
+// toasts For React
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+// bootswatch
+import 'bootswatch/dist/flatly/bootstrap.min.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <ToastContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
